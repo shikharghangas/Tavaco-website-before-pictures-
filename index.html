@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAVACO INC</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Floating Buttons -->
+<div class="floating-buttons">
+  <a href="tel:1 888 807 9119" class="float-btn phone"><i class="fas fa-phone"></i></a>
+  <a href="https://wa.me/416 859 8041" target="_blank" class="float-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://instagram.com/yourinstagram" target="_blank" class="float-btn instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+<header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/TAVACO_logo_transparent.png" alt="TAVACO INC">
+        </a>
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#lawn" onclick="scrollToSection('lawn')">Lawn Care</a></li>
+          <li><a href="#snow" onclick="scrollToSection('snow')">Snow Removal</a></li>
+          <li><a href="#construction" onclick="scrollToSection('construction')">Construction</a></li>
+          <li><a href="#waste" onclick="scrollToSection('waste')">Waste Management</a></li>
+          <li><a href="#why-choose" onclick="scrollToSection('why-choose')">Why Choose Us</a></li>
+          <li><a href="contact.html" class="btn contact-btn">Contact Us</a></li>
+          <li><a href="review.html" class="btn review-btn">Review Us</a></li>
+          <li><a href="aboutus.html" class="btn aboutus-btn">About Us</a></li>
+          <li><a href="careers.html" class="btn career-btn">Careers</a></li>
+
+        </ul>
+      </nav>
+  
+      <!-- Hamburger Menu for Mobile -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+  
+  
+  
+
+<section class="hero">
+  <div class="hero-content">
+    <h1><span>YOUR PROPERTY.</span><br>OUR PRIORITY.</h1>
+    <p>Serving Greater Toronto Area, York Region & Durham Region</p>
+    <button onclick="location.href='contact.html'">Get a Free Quote</button>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>What Our Clients Say</h2>
+  <div class="review-grid">
+    <div class="review-card">“Amazing service, fast and professional!”</div>
+    <div class="review-card">“Reliable snow removal every winter.”</div>
+    <div class="review-card">“Excellent landscaping work.”</div>
+  </div>
+</section>
+
+<section id="lawn" class="service-section">
+  <h2>Lawn Care & Property Services</h2>
+    <p>
+    - Routine mowing and trimming<br>
+    - Fertilizing and weed management<br>
+    - General litter clean up<br>
+    - Landscaping maintenance and construction<br>
+    - Garden maintenance, design and installation<br>
+    - Mulching, and soil works<br>
+    - Edging, pruning and property detailing<br>
+    - Hardscaping (walkways, patios, and stone work)<br>
+    - Tree services, pruning, removal and stump grinding<br>
+    - Highrise lawncare care and green roof services (certified)
+    </p>
+</section>
+
+<section id="snow" class="service-section dark">
+  <h2>Snow Plowing & Ice Management</h2>
+    <p>
+    - Industrial, commercial and residential commercial plowing<br>
+    - Driveway, walkway and roadway clearances<br>
+    - Pre-storm de-icing and Salting services (rock salt or treated salt)<br>
+    - 24/7 storm tracking<br>
+    - Snow removal and or relocation haulage services<br>
+    All of which are tailored to your needs, customized plans, site maps and markings to ensure your
+    individual needs are met.
+    </p>
+</section>
+
+<section id="construction" class="service-section">
+  <h2>Construction & Property Improvements</h2>
+  <p>
+    - Fencing- Installation, repair, and maintenance of wood, vinyl, and metal fencing solutions.<br>
+    - Renovations- Complete interior and exterior property renovations tailored to your needs.<br>
+    - Decking- Custom decks, patios, and outdoor living spaces built with high-quality materials.<br>
+    - Site Upgrades- General property improvements, landscaping integration, and structural upgrades.
+  </p>
+</section>
+<section id="waste" class="service-section dark">
+    <h2>Waste Management</h2>
+    <p>
+      - Garbage pick-up services <br>
+      - Garbage bin services <br>
+      - Hauling and disposable services <br>
+      - Litter pick up
+    </p>
+  </section>
+  
+  <section id="why-choose" class="service-section">
+    <h2>Why Choose Us</h2>
+    <ul class="why-choose-list">
+      <li><strong>Reliable:</strong> We show up when it matters most, you call, we answer</li>
+      <li><strong>Professional:</strong> Licensed, insured, and backed by WSIB we are service-focused</li>
+      <li><strong>Year-round support:</strong> One company for all your seasonal needs</li>
+    </ul>
+    <p>
+      At TAVACO, every job—big or small—gets the same level of dedication. Whether we’re designing landscaping that elevates your property or clearing snow at 2AM to ensure you get to work or open your business, we take pride in working efficiently, safely, and with integrity.
+    </p>
+  </section>
+  
+<footer>
+  <p>© 2025 TAVACO INC. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

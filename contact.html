@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – TAVACO INC</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/TAVACO_logo_transparent.png" alt="TAVACO INC">
+          </a>
+        </div>
+      
+        <div class="header-buttons">
+          <a href="index.html" class="btn index-btn">Home</a>
+          <a href="review.html" class="btn review-btn">Review Us</a>
+        </div>
+      </header>
+      
+<section class="contact-section">
+  <h2>Contact Us</h2>
+
+  <div class="contact-info">
+    <p class="contact-title">Office Number</p>
+    <p><strong>Toll Free:</strong> 1&nbsp;888&nbsp;807&nbsp;9119</p>
+    <p><strong>Aurora:</strong> 416&nbsp;859&nbsp;8041</p>
+  
+    <p class="contact-title">Email-</p>
+    <p>
+      <a href="mailto:tava_co@outlook.com" class="contact-email">
+        tava_co@outlook.com
+      </a>
+    </p>
+  </div>
+  
+  <form id="contactForm" action="https://formspree.io/f/mrbndabq" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

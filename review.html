@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Give a Review – TAVACO INC</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/review.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+          <img src="assets/TAVACO_logo_transparent.png" alt="TAVACO INC">
+        </a>
+      </div>
+      <div class="header-buttons">
+        <a href="index.html" class="btn index-btn">Home</a>
+        <a href="contact.html" class="btn contact-btn">Contact Us</a>
+      </div>
+</header>
+
+<section class="contact-section">
+  <h2>Give Us a Review</h2>
+
+  <form action="https://formspree.io/f/mgvgqlnj" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <div class="star-rating">
+      <input type="radio" name="rating" value="5" id="star5"><label for="star5">★</label>
+      <input type="radio" name="rating" value="4" id="star4"><label for="star4">★</label>
+      <input type="radio" name="rating" value="3" id="star3"><label for="star3">★</label>
+      <input type="radio" name="rating" value="2" id="star2"><label for="star2">★</label>
+      <input type="radio" name="rating" value="1" id="star1"><label for="star1">★</label>
+    </div>
+
+    <textarea name="message" placeholder="Write your review..." required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
