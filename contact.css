@@ -1,0 +1,238 @@
+/* =========================
+   Contact Page Only Styles
+========================= */
+
+.contact-section {
+    padding: 110px 40px;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    font-weight: 800;
+  }
+  /* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info {
+    max-width: 460px;
+    margin: 0 auto 24px;
+    text-align: center;
+    
+  }
+  .contact-info * {
+    color: #000 !important;
+  }
+  .contact-title {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  .contact-info p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #000;
+  }
+  
+  .contact-email {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #facc15;
+    padding-bottom: 2px;
+  }
+  
+  .contact-email:hover {
+    color: #000;
+    border-color: #eab308;
+  }
+  
+  .contact-section p {
+    max-width: 620px;
+    margin: 0 auto 28px;
+    color: var(--gray);
+    font-size: 16px;
+  }
+  
+  /* =========================
+     Contact Form Card
+  ========================= */
+  
+  .contact-section form {
+    background: white;
+    max-width: 460px;
+    margin: 40px auto 0;
+    padding: 36px;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #cbd5f5;
+    font-size: 15px;
+    font-family: inherit;
+  }
+  
+  .contact-section textarea {
+    min-height: 130px;
+    resize: vertical;
+  }
+  
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  /* =========================
+     Submit Button
+  ========================= */
+  
+  .contact-section button {
+    margin-top: 14px;
+    padding: 14px;
+    background: #facc15;
+    
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-section button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+  }
+  
+  /* =========================
+     Image Upload Preview
+  ========================= */
+  
+  .image-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+  }
+  
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* =========================
+     Responsive
+  ========================= */
+  
+ /* =========================
+   CONTACT HEADER
+========================= */
+.header {
+    text-align: center;
+    padding: 30px 20px 10px;
+  }
+  
+  /* Logo */
+  .header .logo img {
+    max-height: 130px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button container */
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  /* Base button style */
+  .header .btn {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+  }
+  
+  /* Home button */
+  .index-btn {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+  }
+  
+  .index-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  /* Review button */
+  .review-btn {
+    background: #facc15;
+    color: #000;
+    border: 2px solid #facc15;
+  }
+  
+  .review-btn:hover {
+    background: #eab308;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(250,204,21,0.4);
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  @media (max-width: 600px) {
+    .header .logo img {
+      max-height: 100px;
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  
+  

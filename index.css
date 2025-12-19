@@ -1,0 +1,397 @@
+/* =========================
+   HOME PAGE – CONTRACTOR BRAND
+   BLACK / YELLOW / WHITE
+========================= */
+
+:root {
+  --yellow: #facc15;
+  --black: #0b0b0b;
+  --white: #ffffff;
+  --gray: #9ca3af;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  width: 100%;
+  background: transparent; /* transparent to show hero */
+  text-align: center;
+  padding: 30px 0;
+  position: relative; /* scrolls normally */
+  z-index: 999;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo centered */
+/* Logo centered and bigger */
+.header .logo {
+  margin-bottom: 25px;
+}
+
+.header .logo img {
+  max-height: 160px; /* increased from 100px */
+  transition: transform 0.3s ease;
+}
+
+.header .logo img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Responsive logo */
+@media (max-width: 900px) {
+  .header .logo img {
+    max-height: 130px; /* slightly smaller on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .header .logo img {
+    max-height: 100px; /* mobile screens */
+  }
+}
+
+/* Navigation Menu */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.nav-links li {
+  list-style: none;
+  flex: 1;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 16px;
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: var(--yellow);
+  color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(250,204,21,0.4);
+}
+
+/* Buttons like contact/review */
+.nav-links .btn {
+  background: var(--yellow);
+  color: var(--black);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nav-links .btn:hover {
+  background: #eab308;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(250,204,21,0.4);
+}
+
+/* Hamburger for Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: var(--black);
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  background:
+    linear-gradient(rgba(11,11,11,0.82), rgba(11,11,11,0.82)),
+    url("https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.hero-content {
+  max-width: 980px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 5.5vw, 64px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 40px;
+}
+
+.hero button {
+  padding: 18px 46px;
+  font-size: 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(250,204,21,0.55);
+}
+
+/* =========================
+   REVIEWS
+========================= */
+.reviews {
+  padding: 110px 40px;
+  background: var(--white);
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 36px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.review-card {
+  background: var(--black);
+  color: var(--white);
+  padding: 38px;
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  position: relative;
+}
+
+.review-card::before {
+  content: "★★★★★";
+  color: var(--yellow);
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  font-size: 14px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+.service-section {
+  padding: 120px 40px;
+  text-align: center;
+  background: var(--white);
+  color: var(--black);
+}
+
+.service-section h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.service-section p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 19px;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* =========================
+   SNOW PLOWING – HIGH VISIBILITY
+========================= */
+#snow {
+  background:
+    linear-gradient(rgba(11,11,11,0.9), rgba(11,11,11,0.9)),
+    url("https://images.unsplash.com/photo-1612208695882-62fef5dcd5c2?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+#snow h2 {
+  color: var(--yellow);
+}
+
+#snow p {
+  color: #e5e7eb;
+  font-size: 20px;
+}
+
+/* =========================
+   WASTE MANAGEMENT – DARK OVERLAY
+========================= */
+#waste {
+  background:
+    linear-gradient(rgba(11,11,11,0.9), rgba(11,11,11,0.9)),
+    url("https://images.unsplash.com/photo-1612208695882-62fef5dcd5c2?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 40px;
+}
+
+#waste h2 {
+  color: var(--yellow);
+}
+
+#waste p,
+#waste ul {
+  color: #e5e7eb;
+  font-size: 20px;
+}
+
+#waste ul li {
+  margin: 12px 0;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#waste::after {
+  background: var(--yellow);
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+#why-choose {
+  padding: 120px 40px;
+  text-align: center;
+  background: var(--white);
+  color: var(--black);
+}
+
+#why-choose h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+#why-choose ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#why-choose li {
+  margin: 12px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#why-choose::after {
+  background: var(--yellow);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: 0;
+  padding: 40px 20px;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    flex: none;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .service-section,
+  #why-choose,
+  #waste {
+    padding: 90px 26px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .reviews {
+    padding: 90px 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 90px 18px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .service-section h2,
+  .reviews h2,
+  #why-choose h2,
+  #waste h2 {
+    font-size: 32px;
+  }
+}

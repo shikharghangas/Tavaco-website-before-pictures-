@@ -1,0 +1,218 @@
+/* =========================
+   ABOUT US PAGE
+========================= */
+
+.about-hero {
+    padding: 120px 30px 80px;
+    text-align: center;
+    background:
+      linear-gradient(rgba(11,11,11,0.85), rgba(11,11,11,0.85)),
+      url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .about-hero h1 {
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  
+  .about-hero p {
+    font-size: 18px;
+    color: #e5e7eb;
+  }
+  
+  /* =========================
+     ABOUT SECTIONS
+  ========================= */
+  
+  .about-section {
+    padding: 110px 40px;
+    background: #fff;
+  }
+  
+  .about-section.dark {
+    background: #0b0b0b;
+    color: #fff;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .about-content.reverse {
+    direction: rtl;
+  }
+  
+  .about-content.reverse > * {
+    direction: ltr;
+  }
+  
+  /* Text */
+  .about-text h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .about-section.dark .about-text h2 {
+    color: #facc15;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #374151;
+  }
+  
+  .about-section.dark .about-text p {
+    color: #e5e7eb;
+  }
+  
+  /* Images */
+  .about-image img {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  }
+  
+  /* =========================
+     FOOTER
+  ========================= */
+  
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  
+  @media (max-width: 900px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .about-content.reverse {
+      direction: ltr;
+    }
+  
+    .about-hero {
+      padding: 100px 20px 70px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .about-text h2 {
+      font-size: 30px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+    }
+  }
+
+  
+  /* =========================
+   HEADER BUTTON STYLES
+========================= */
+
+.header {
+    text-align: center;
+    padding: 30px 20px 20px;
+  }
+  
+  /* Logo */
+  .header .logo img {
+    max-height: 130px;
+    margin-bottom: 22px;
+  }
+  
+  /* Buttons container */
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  /* Base button */
+  .header .btn {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    transition: all 0.25s ease;
+  }
+  
+  /* Home button */
+  .index-btn {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+  }
+  
+  .index-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  /* Contact button */
+  .contact-btn {
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .contact-btn:hover {
+    background: #111;
+    transform: translateY(-2px);
+  }
+  
+  /* Review button */
+  .review-btn {
+    background: #facc15;
+    color: #000;
+    border: 2px solid #facc15;
+  }
+  
+  .review-btn:hover {
+    background: #eab308;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(250,204,21,0.4);
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  
+  @media (max-width: 600px) {
+    .header .logo img {
+      max-height: 100px;
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  
